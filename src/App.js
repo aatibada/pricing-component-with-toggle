@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import PageHeading from "./PageHeading";
 import Cards from "./Cards";
-import plans from './plans'
 import './App.css';
 
 function App() {
