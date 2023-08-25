@@ -1,11 +1,11 @@
 import plans from './plans';
 import Card from "./Card";
 
-const Cards = () => {
+const Cards = ({ pricing }) => {
   return (
     <main>
       {plans.map(plan => {
-        return <Card key={plan.type} plan={plan}  />
+        return <Card key={plan.type} pricing={pricing} plan={plan}  />
       })}
     </main>
   )

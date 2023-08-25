@@ -1,7 +1,13 @@
-const PageHeading = () => {
+const PageHeading = ({ pricing, setPricing }) => {
   const handleClick = () => {
     const toggleBtn = document.querySelector(".toggle-btn");
     toggleBtn.classList.toggle("annually");
+
+    if (pricing === 'monthly') {
+      setPricing('annually');
+    } else {
+      setPricing('monthly');
+    }
   }
 
   return (
